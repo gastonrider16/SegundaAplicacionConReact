@@ -2,13 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-function Componente(props){
-  alert(props.titulo);
-  alert(props.contenido);
+function Componente({titulo, contenido}){
   return(
     <div>
-      <h1>REACT JS</h1>
-      <div>Hola desde React</div>
+      <h1>{titulo}</h1>
+      <div>{contenido}</div>
     </div>
   );
 }
@@ -18,4 +16,3 @@ ReactDOM.render(
   <Componente titulo="JAVA" contenido="POO"/>,
   document.getElementById('root')
 );
-
