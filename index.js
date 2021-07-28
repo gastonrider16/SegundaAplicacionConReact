@@ -2,17 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-function Componente({titulo, contenido}){
+function Componente({titulo, children}){
   return(
     <div>
       <h1>{titulo}</h1>
-      <div>{contenido}</div>
+      <div>{children}</div>
     </div>
   );
 }
 
 ReactDOM.render(
   //Vamos a renderizar...
-  <Componente titulo="JAVA" contenido="POO"/>,
+  <Componente titulo="JAVA">Aguante Java</Componente>,
   document.getElementById('root')
 );
