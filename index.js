@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-function Componente(){
+function Componente(props){
+  alert(props.titulo);
+  alert(props.contenido);
   return(
     <div>
       <h1>REACT JS</h1>
@@ -13,6 +15,7 @@ function Componente(){
 
 ReactDOM.render(
   //Vamos a renderizar...
-  <Componente/>,
+  <Componente titulo="JAVA" contenido="POO"/>,
   document.getElementById('root')
 );
+
