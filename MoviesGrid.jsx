@@ -1,12 +1,11 @@
 import movies from './movies.json';
 export function MoviesGrid() {
-    console.log(movies);
     return(
     <ul>
-        {movies.map(
-            function(movie){
-                return <li>{movie.title}</li>
-            }
+        {movies.map( //movies es un arreglo
+            (movie) => ( //=> ARROW FUNCTION
+               <li>{movie.title}</li> 
+            )
             )
         }
     </ul>
