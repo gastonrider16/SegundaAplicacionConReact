@@ -1,18 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
-function Componente({titulo, children}){
-  return(
-    <div>
-      <h1>{titulo}</h1>
-      <div>{children}</div>
-    </div>
-  );
-}
+import {App} from './App';
 
 ReactDOM.render(
   //Vamos a renderizar...
-  <Componente titulo="JAVA">Aguante Java</Componente>,
+  <App/>,
   document.getElementById('root')
 );
+
