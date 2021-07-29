@@ -3,8 +3,12 @@ export function MoviesGrid() {
     console.log(movies);
     return(
     <ul>
-        <li>Peli1</li>
-        <li>Peli2</li>
+        {movies.map(
+            function(movie){
+                return <li>{movie.title}</li>
+            }
+            )
+        }
     </ul>
     );
 }
