@@ -1,3 +1,6 @@
 export function MovieCard({movie}){
-    return <li>{movie.title}</li>
+    const imageURL = "https://image.tmdb.org/t/p/w300" + movie.poster_path
+    return <li>
+        <img src={imageURL} alt={movie.title}/>
+        {movie.title}</li>
 } 
