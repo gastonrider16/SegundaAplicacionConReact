@@ -1,0 +1,5 @@
+/*PARA QUE LA GRILLA SEA RESPONSIVE DESIGN*/
+.moviesGrid {
+    display: grid; /*Ya es un grid conteiner*/
+    grid-template-columns: repeat(auto-fill, 230px);
+}
